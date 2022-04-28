@@ -1,0 +1,237 @@
+@font-face {
+     src: url("../fonts/Tajawal-Regular.ttf");
+     font-family: "main";
+}
+* {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: "main", sans-serif;
+     margin: 0;
+     padding: 0;
+}
+body {
+     overflow-x: hidden;
+     background: #F4F5F7;
+     direction: rtl;
+     text-align: right;
+}
+a{
+     text-decoration: none;
+     color: #000;
+}
+.main{
+     min-height: calc(100vh - 130px);
+}
+.margin-top-76{
+     margin-top: 75px;
+}
+.sidebar{
+     width: 250px;
+     min-width: 250px !important;
+     max-width: 250px !important;
+     min-height: calc(100vh - 130px);
+     transition: ease 1s;
+}
+.active-sidebar{
+     right: 10px;
+     transition: ease 1s;
+}
+.side-active{
+     display: block !important;
+     position: fixed;
+     top:-5px;
+     right: 0;
+     width: 100%;
+     z-index: 1024;
+     transition: ease 1s;
+     min-height: 100vh !important;
+}
+.open{
+     transform: rotate(-180deg);
+     transition: ease 1s;
+}
+.overlay-1{
+     position: absolute;
+     z-index: 21;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,0.1);
+}
+.when-hover li a{
+     border-bottom: 2px solid transparent;
+}
+.when-hover li:hover{
+     background: #f8f9fa !important;
+     transition: ease 0.5s;
+}
+.when-hover .active{
+     background: #f8f9fa !important;
+}
+.when-hover li a:hover{
+     transition: ease 0.5s;
+     color: #198754 !important;
+     border-bottom: 2px solid #198754;
+}
+.when-hover-side .active{
+     border: 1px solid #198754 !important;
+     color: #198754 !important;
+}
+.when-hover-side li:hover{
+     border: 1px solid #198754 !important;
+     transition: ease 0.5s;
+}
+.when-hover li a:hover{
+     transition: ease 0.5s;
+     color: #198754 !important;
+}
+.rounded-edit{
+     border-radius: 15px;
+}
+.img-single img{
+     object-fit: cover;
+}
+.input-file{
+     z-index: -1;
+     position: absolute;
+     opacity: 0;
+}
+.all-w-textarea{
+     width: 90% !important;
+}
+.w-textarea{
+     width: 85%;
+}
+.textarea-comment{
+     resize: none;
+     overflow: auto;
+}
+.name-file-upload{
+     bottom: -18px;
+     right: 0;
+}
+button:focus{
+     outline: none !important;
+     box-shadow: none !important;
+}
+.logo-login{
+     margin-top: -50px;
+}
+/*   Media     */
+@media (max-width: 768px) {
+     .w-sm-auto{
+          width: auto;
+     }
+     .all-w-textarea{
+          width: 80% !important;
+     }
+     .w-textarea{
+          width: 100% !important;
+     }
+     .all-login{
+          min-height: 100% !important;
+          margin: 20px !important;
+     }
+     .title-login{
+          padding: 20px !important;
+     }
+    .menu-sm{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFF;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+        border-top: 1px solid #dee2e6 !important;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+        left: 0 !important;
+    }
+    .padding-bottom-76{
+        padding-bottom:70px;
+    }
+    .logout-sm {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10px !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.content-time{
+    display: none;
+    right: 10px;
+    top: 10px;
+    z-index: 22;
+    font-size: 20px;
+}
+.card-hover:hover .overlay{
+    transition: ease-in-out 0.4s;
+    z-index: 20;
+    background: rgba(0,0,0,0.7);
+    opacity: 1;
+}
+.card-hover:hover:hover .content-time {
+    display: block !important;
+    transition: ease-in-out 0.3s;
+}
+
+.z-index-40 {
+    z-index: 40;
+}
+
+span.select2-container.select2-container--default.select2-container--open {
+    z-index: 999999;
+}
+
+.w-97 {
+    width: 97% !important;
+}
+
+.check-modal-true {
+    top: 1px !important;
+    left: 4px !important;
+}
+
+.btnCheck {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.check-modal {
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.status-position {
+    top: -6px;
+    left: -20px;
+    transform: rotate(-30deg);
+}
+
+.managers {
+    white-space: normal;
+    word-break: break-all;
+    width: 30% !important;
+    margin-top: 28px;
+}
+
+@media print {
+    .menu-sm, nav, footer, .form-export {
+        display: none !important;
+    }
+}
+
+.manager-scroll {
+    max-height: 70px;
+}
+
+.nicescroll-rails.nicescroll-rails-hr  {
+    opacity: 0 !important;
+    display:none;
+}
+.w-45 {
+    width: 40% !important;
+}
+
+.pagination { justify-content: center !important; }
