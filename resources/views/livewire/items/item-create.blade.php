@@ -58,8 +58,17 @@
                                 @error('item.place')<span class="text-danger error">{{ $message }}</span>@enderror
                             </div>
                         </div>
+                       
+                       
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div class="form-group">
+                                   <div class="form-group">
+                                <label for="">القسم</label>
+                                <input wire:model.defer="category" type="text" class="form-control">
+                                @error('category')<span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                           
+                           
+                            {{-- <div class="form-group">
                                 <label for="">القسم</label>
                                 <select wire:model.defer="item.category_id" name="category_id" class="form-control">
                                     <option value="">{{ __('Nothing') }}</option>
@@ -68,17 +77,13 @@
                                     @endforeach
                                 </select>
                                 @error('item.category_id') <span class="text-danger error">{{ $message }}</span>@enderror
-                            </div>
+                            </div> --}}
                             {{-- <div class="form-group">
                                 <label for="">الوحدة</label>
-                                <select wire:model.defer="addItem" name="unit_id" class="form-control" multiple>
-                                    <option value="">{{ __('Nothing') }}</option>
-                                    @foreach($units as $unit)
-                                        <option value="{{ $unit->id }}">{{ $unit->name }}</option>
-                                    @endforeach
-                                </select>
-                                @error('item.unit_id') <span class="text-danger error">{{ $message }}</span>@enderror
+                                <input wire:model.defer="item.unit" type="text" class="form-control">
+                                @error('item.unit')<span class="text-danger error">{{ $message }}</span>@enderror
                             </div> --}}
+                      
                             <div class="form-check">
                                 <input wire:model.defer="item.serial_multi" class="form-check-input" type="checkbox"id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
